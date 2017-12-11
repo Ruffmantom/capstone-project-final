@@ -1,3 +1,6 @@
+HTML{
+  font-size: 16px;
+}
 #site-container{
   width: auto;
   margin: 0 auto;
@@ -147,8 +150,10 @@
   color: black;
   margin-bottom: 24px;
   margin-top: 24px;
+  font-family: "Montserrat", Helvetica;
 }
 .ls-content p{
+  font-family: Helvetica;
   font-size: 16px;
   font-weight: lighter;
 }
@@ -161,7 +166,7 @@
   display: none;
 }
 .right-side{
-
+  font-family: Helvetica;
 }
 .rs-content{
   width: 65%;
@@ -264,4 +269,29 @@
     height: auto;
     margin: 0 auto;
   }
+}
+/*-------------LEARNING SECTION DESKTOP------------*/
+.learning.section{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+.learn-header{
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat", Helvetica;
+  font-size: 1.75rem;
+  margin-bottom: 32px;
+  padding-top: 32px;
+  }
+.ls-img-box img{
+  max-width: 100%;
+  height: auto;
+}
+.all-content-t{
+  display: flex;
+}
+.all-content-b{
+  display: flex;
 }
