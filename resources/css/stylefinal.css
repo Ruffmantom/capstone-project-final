@@ -5,6 +5,10 @@ HTML{
   width: auto;
   margin: 0 auto;
 }
+.section{
+  width: 100%;
+  margin: 0 auto;
+}
 /*---------DESKTOP HEAD----------*/
 #mobile-nav{
   display: none;
@@ -156,6 +160,7 @@ HTML{
   font-family: sans-serif;
   font-size: 16px;
   font-weight: lighter;
+  line-height: 1.5rem;
 }
 .ls-content .base-text{
   font-size: .75rem;
@@ -175,6 +180,7 @@ HTML{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
 }
 .rs-content h3{
   font-size: 1.25rem;
@@ -184,6 +190,7 @@ HTML{
 .rs-content p{
   font-weight: lighter;
   margin-bottom: 8px;
+  line-height: 1.5rem;
 }
 .rs-content a{
   margin-bottom: 8px;
@@ -277,14 +284,17 @@ HTML{
   margin: 0 auto;
   background-color: lightgray;
   padding-bottom: 2rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 .learn-header{
+  width: auto;
   text-align: center;
   font-weight: bold;
   font-family: sans-serif;
   font-size: 2.5rem;
   margin-bottom: 3rem;
+  margin-top: 2rem;
+  opacity: .8;
   }
 .all-content{
   width: auto;
@@ -337,4 +347,128 @@ HTML{
   margin: 4px auto;
   font-weight: lighter;
   line-height: 1.5rem;
+}
+.learn-mobile{
+  display: none;
+}
+/*-------------------LEARN SECTION MOBILE-----------*/
+@media only screen and (max-width:640px) {
+  .learning.section{
+    background-color: white;
+  }
+  .all-content{
+    display: none;
+  }
+  .learn-header{
+    font-size: 2rem;
+  }
+  .learn-mobile{
+    display: block;
+    width: auto;
+    height: auto;
+
+  }
+  .learn-option{
+    font-family: sans-serif;
+    font-size: 1.5rem ;
+    width: 70%;
+    padding:16px 16px;
+    margin: 8px auto;
+    opacity: .7;
+    background-color: lightgray;
+  }
+  .learn-option:hover{
+    background-color: gray;
+    opacity: 1;
+  }
+}
+/*----------------THESIS DESKTOP --------------*/
+.thesis{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-family: sans-serif;
+  padding-bottom: 2rem;
+}
+.video-and-content{
+  display: flex;
+  width: auto;
+  height: auto;
+
+}
+.thesis-mobile{
+  display: none;
+}
+.ls-thesis{
+  width: 60%;
+  height: auto;
+  margin: 0 24px;
+  line-height: 1.5rem;
+}
+.ls-thesis h4{
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: .5rem 0;
+}
+.video{
+  width: 100%;
+  height: auto;
+  padding-bottom: 1.5rem;
+}
+.rs-thesis{
+  width: 40%;
+  height: auto;
+
+}
+.thesis h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 32px auto;
+  opacity: .8;
+}
+
+/* ------RIGHT SIDE THESIS DESKTOP----*/
+.rs-thesis-top{
+  display: flex;
+  padding:16px;
+  align-items: center;
+}
+.rs-thesis-bottom{
+  display: flex;
+  padding: 16px;
+  align-items: center;
+}
+.rs-thesis-top img{
+  width: 35%;
+  height: auto;
+  padding-right: 16px;
+}
+.rs-thesis-bottom img{
+  width: 35%;
+  height: auto;
+  padding-right: 16px;
+}
+.thesis-content{
+  width: 100%;
+  height: auto;
+}
+.thesis-content h4{
+  font-size: 1.25rem;
+  font-weight: bold;
+  opacity: .8;
+  line-height: 1.5rem;
+}
+.thesis-content p{
+  line-height: 1.5rem;
+}
+@media only screen and (min-width:850px) {
+  .rs-thesis-top:hover{
+    background-color: lightgray;
+  }
+  .rs-thesis-bottom:hover{
+    background-color: lightgray;
+  }
+
 }
