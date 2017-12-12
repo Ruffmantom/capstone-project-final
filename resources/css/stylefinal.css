@@ -145,15 +145,15 @@ HTML{
   margin-left: 24px;
 }
 .ls-content h2{
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: bold;
   color: black;
   margin-bottom: 24px;
   margin-top: 24px;
-  font-family: "Montserrat", Helvetica;
+  font-family: sans-serif;
 }
 .ls-content p{
-  font-family: Helvetica;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: lighter;
 }
@@ -166,7 +166,7 @@ HTML{
   display: none;
 }
 .right-side{
-  font-family: Helvetica;
+  font-family: sans-serif;
 }
 .rs-content{
   width: 65%;
@@ -276,22 +276,65 @@ HTML{
   height: auto;
   margin: 0 auto;
   background-color: lightgray;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
 }
 .learn-header{
   text-align: center;
   font-weight: bold;
-  font-family: "Montserrat", Helvetica;
-  font-size: 1.75rem;
-  margin-bottom: 32px;
-  padding-top: 32px;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
   }
-.ls-img-box img{
-  max-width: 100%;
+.all-content{
+  width: auto;
   height: auto;
+  margin: 0 4.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-.all-content-t{
+.learn-top{
   display: flex;
+  margin: 0 auto;
+  padding:;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
 }
-.all-content-b{
+.learn-bottom{
   display: flex;
+  margin: 0 auto;
+  margin-top: 32px;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+.ls-img-box img{
+  width: 100% ;
+  height: auto;
+  padding-bottom: 16px;
+}
+.ls-img-box{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  background-color: white;
+  font-family: sans-serif;
+}
+.learn-content{
+  width: auto;
+  height: auto;
+  padding: 0 16px;
+  padding-bottom: 24px;
+}
+.learn-content h4{
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+.learn-content p{
+  margin: 4px auto;
+  font-weight: lighter;
+  line-height: 1.5rem;
 }
