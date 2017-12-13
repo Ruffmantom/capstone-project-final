@@ -23,6 +23,10 @@ HTML{
   top: 0;
   z-index: 10;
 }
+.desktop-nav .link{
+  color: black;
+  text-decoration: none;
+}
 .desktop-nav{
   display: flex;
   align-items: center;
@@ -31,7 +35,8 @@ HTML{
 }
 .desktop-nav nav ul li{
   display: inline;
-  padding: 0 16px 0 16px;
+  padding: 0 8px 0 8px;
+  opacity: .7;
 }
 .desktop-nav, nav{
   justify-content: space-between;
@@ -53,7 +58,7 @@ HTML{
   color: darkgray;
 }
 /*-----------HEADER SECTION mobile-----------------*/
-@media only screen and (max-width:605px) {
+@media only screen and (max-width:679px) {
   #site-container{
     width: 100%;
     display: flex;
@@ -149,6 +154,7 @@ HTML{
   margin-left: 24px;
 }
 .ls-content h2{
+  opacity: .8;
   font-size: 2rem;
   font-weight: bold;
   color: black;
@@ -157,6 +163,7 @@ HTML{
   font-family: sans-serif;
 }
 .ls-content p{
+  opacity: .7;
   font-family: sans-serif;
   font-size: 16px;
   font-weight: lighter;
@@ -194,6 +201,8 @@ HTML{
 }
 .rs-content a{
   margin-bottom: 8px;
+  color: #3CA5CF;
+  text-decoration: none;
 }
 .rs-img{
   width: 35%;
@@ -377,9 +386,11 @@ HTML{
     opacity: .7;
     background-color: lightgray;
   }
+  /*
   .learn-option:hover{
     background-color: gray;
     opacity: 1;
+    */
   }
 }
 /*----------------THESIS DESKTOP --------------*/
@@ -399,12 +410,16 @@ HTML{
 .thesis-mobile{
   display: none;
 }
+.ls-thesis p{
+  opacity: .7;
+}
 .ls-thesis{
   width: 60%;
   height: auto;
   margin: 0 24px;
   line-height: 1.5rem;
   font-weight: lighter;
+  font-family: sans-serif;
 }
 .ls-thesis h4{
   font-size: 1.25rem;
@@ -435,11 +450,13 @@ HTML{
   display: flex;
   padding:16px;
   align-items: center;
+  font-family: sans-serif;
 }
 .rs-thesis-bottom{
   display: flex;
   padding: 16px;
   align-items: center;
+  font-family: sans-serif;
 }
 .rs-thesis-top img{
   width: 35%;
@@ -474,7 +491,32 @@ HTML{
   }
 }
 /*----------THESIS MOBILE-------*/
+@media only screen and (max-width:779px) {
+  .video-and-content{
+    display: none;
 
+  }
+  .thesis-mobile{
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  .thesis-mobile video{
+    width: 100%;
+    height: auto;
+  }
+  .thesis h1{
+    font-size: 2rem;
+  }
+  /*----FOOTER-----*/
+  footer{
+    font-size: .75rem;
+
+  }
+  .rs-foot{
+    display: none;
+  }
+}
 
 
 
@@ -483,14 +525,25 @@ HTML{
 
 footer{
   display: flex;
-  padding: 16px 16px;
+  padding: 16px 16px 3rem 16px;
   width: auto;
-  height: 4rem;
+  margin-top: 1.5rem;
+  font-size: .75rem;
   font-family: sans-serif;
   font-weight: lighter;
-  border-top: 1px solid lightgray;
   justify-content: space-between;
+  align-items: center;
+  opacity: .7;
 }
 .rs-foot span{
   padding: .5rem;
+}
+@media only screen and (min-width:500px) {
+  footer{
+    border-top: 1px solid lightgray;
+    padding-left: 16px 0;
+    margin-top:1.5rem;
+
+  }
+
 }
