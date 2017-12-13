@@ -92,12 +92,30 @@ HTML{
 }
 .banner-content{
   width: 25%;
+  line-height: 32px;
+  line-height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: sans-serif;
+}
+/*
+.banner-content{
+  width: 25%;
   line-height: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: sans-serif;
 }
+*/
 .button{
   background-color: #3B3B3B;
   padding: 8px;
